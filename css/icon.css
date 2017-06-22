@@ -18,9 +18,11 @@ class以icon-开头或者包含icon-
 */
 .complex [class^="img-"]/* ,
 .complex [class*="icon-"] */{
+	width:200px;
+	height:200px;
 	display: inline-block;
-	*margin-right: .3em;
-	line-height: 14px; /* 行高 */
+	/* *margin-right: .3em; */
+	/* line-height: 14px; */ /* 行高 */
 	vertical-align: text-top;
 	background-image: url("icons/yixue.png");
 	background-repeat: no-repeat;
@@ -33,7 +35,37 @@ a:hover > [class^="icon-"],
 a:focus > [class^="icon-"]{
 	background-image: url("icons/cancel-active.png");
 }
-
+/**
+把div解释成一个坐标轴图，向左、向上是负，向右、向下是正。时刻看0,0点的位置。
+*/
 .img-needle {
   background-position: 0 0;
 }
+.img-echometer {
+  background-position: -201px 0;
+}
+.img-thermometer {
+  background-position: -401px 0;
+}
+
+.img-yixue_04 {
+  background-position: 0 -201px;
+}
+.img-yixue_05 {
+  background-position: -201px -201px;
+}
+.img-yixue_06 {
+  background-position: -401px -201px;
+}
+
+.img-yixue_07 {
+  background-position: 0 -401px;
+}
+.img-yixue_08 {
+  background-position: -201px -401px;
+}
+.img-yixue_09 {
+  background-position: -401px -401px;
+}
+
+
