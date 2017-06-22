@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+/*
+[ background-color ]		
+[ background-image ]		
+[ background-repeat ]		
+[ background-attachment ]	指定对象的背景图像是随对象内容滚动还是固定的
+[ background-position ] 	指定对象的背景图像位置  x,y width和height
+*/
+.micon-cancel{
+	background:url('icons/cancel.png') no-repeat left center;
+	width: 18px;
+	height: 18px;
+}
+
+
+/**
+class以icon-开头或者包含icon-
+*/
+.complex [class^="img-"]/* ,
+.complex [class*="icon-"] */{
+	display: inline-block;
+	*margin-right: .3em;
+	line-height: 14px; /* 行高 */
+	vertical-align: text-top;
+	background-image: url("icons/yixue.png");
+	background-repeat: no-repeat;
+	/*background-position: 14px 14px;*/
+}
+
+.nav > .active > a > [class^="icon-"],
+.nav > .active > a > [class*=" icon-"],
+a:hover > [class^="icon-"],
+a:focus > [class^="icon-"]{
+	background-image: url("icons/cancel-active.png");
+}
+
+.img-needle {
+  background-position: 0 0;
+}
