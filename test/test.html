@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1.0">
 	<title>auto & 100%</title>
 	<link href="../css/icon.css" rel="stylesheet">
 </head>
@@ -14,10 +15,61 @@
 <div style="background-color: #0f0; width: 600px;height: 100px;">
 	<p style="width: auto;background-color: #00F;padding: 30px;"><span style="background-color: #f00;color: #FFF;">我是文字</span></p>
 </div>
+<div>
+	<div style="width: 300px;height: 300px;background-color: #0df;display: inline-block;">
+		<div style="width: 100px;height: 100px;background-color: #000;">
+			<img src="../image/yixue/yixue_01.gif" style="width: 100%;padding: 30px;">
+		</div><br>
+		<div style="width: 100px;height: 100px;background-color: #000;">
+			<img src="../image/yixue/yixue_01.gif" style="width: auto;padding: 30px;">
+		</div>
+	</div>
+	<div style="width: 300px;height: 300px;background-color: #0df;display: inline-block;">
+		<div style="width: 100px;height: 100px;background-color: #000;">
+			<img src="../image/yixue/yixue_01.gif" style="width: 100%;padding: 30px;">
+		</div>
+		<br>
+		<div style="width: 100px;height: 100px;background-color: #000;">
+			<img src="../image/yixue/yixue_01.gif" style="width: auto;padding: 30px;display: block;">
+		</div>
+	</div>
+</div>
 <hr>
 <div>
 <div class="micon-cancel"><span style="margin-left: 15px;">Cancel</span></div>
 <div class="complex"><span class="img-needle">needle</span></div>
+</div>
+
+<hr>
+<h3>看子元素width&gt;父元素width时效果</h3>
+<div style="background-color: #3dd;width: 600px;height: 300px;">
+	<div style="width: 50px;height: 50px;background: #000;">
+		<img src="../image/yixue/yixue_01.gif" style="width: 100%;padding: 30px;">
+	</div>
+	<br>
+	<br><div style="width: 50px;height: 50px;background: #000;">
+		<img src="../image/yixue/yixue_01.gif" style="width: auto;padding: 30px;">
+	</div>
+	<div style="margin-left: 250px;">
+		<div style="width: 50px;height: 50px;background: #0A0;">
+			<div style="width: 100%;background-color: #22E;padding: 30px;"></div>
+		</div>
+		<br><div style="width: 50px;height: 50px;background: #0A0;">
+			<div style="width: auto;background-color: #22E;padding: 30px;">
+				<div style="width: 80px;height: 80px;background-color: #0FF;"></div>
+			</div>
+		</div>
+	</div>
+	<div style="margin-left: 460px;margin-top: -230px;">
+		<div style="width: 50px;height: 50px;background: #0A0;">
+			<div style="width: 100%;background-color: #22E;padding: 30px;"></div>
+		</div>
+		<br><div style="width: 50px;height: 50px;background: #0A0;">
+			<div style="background-color: #2cc;padding: 30px;">
+				<div style="width: 80px;height: 80px;background-color: #0FF;"></div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
